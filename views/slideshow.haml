@@ -1,0 +1,10 @@
+%h2= data.size()
+%p testing mode
+%ul#slides
+	- data.each_with_index do |ithem, key|
+		- if key == 0
+			- state = "showing"
+		- else
+			- state = "hidden"
+		%li{:class => state}
+			%p= ithem

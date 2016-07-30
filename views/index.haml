@@ -1,0 +1,11 @@
+.row
+	.col-sm-offset-4.col-sm-4
+		%h2 Instagram SlideShow
+		%p Enter Instagram hashtag to proceed to slideshow:
+		%form{ :action => "/slideshow", :method => "post" }
+			%label.control-label Instagram hashtag:
+			%input.form-control.input-md{:name => "tag", :placeholder => "Example: snow or winter, snow", :type => "text", :required => true}
+			%label.control-label Number of page to show:
+			%input.form-control.input-md{:name => "page", :type => "number", :min => "0", :max => "10", :placeholder => "From 1 to 10 page", :value => "0", :required => true}
+			%br
+			%input.btn.bnt-lg.btn-success{:type => "submit"}
