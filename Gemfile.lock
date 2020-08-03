@@ -3,7 +3,7 @@ GEM
   specs:
     haml (4.0.7)
       tilt
-    json (2.0.2)
+    json (>= 2.3.0)
     rack (>= 2.1.4)
     rack-protection (1.5.3)
       rack
