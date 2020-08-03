@@ -4,7 +4,7 @@ GEM
     haml (4.0.7)
       tilt
     json (2.0.2)
-    rack (2.1.3)
+    rack (>= 2.1.4)
     rack-protection (1.5.3)
       rack
     sinatra (1.4.7)
